@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import keycloak from './auth/keycloak';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 import './App.css';
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -19,14 +22,8 @@ function App() {
           setUserName(keycloak.tokenParsed.preferred_username);
         }
       })
-      .catch((err) => {
-        console.error('Keycloak Initialization Failed', err);
-      });
+      .catch((err) => console.log(err));
   }, []);
-
-  const login = () => {
-    keycloak.login();
-  };
 
   const logout = () => {
     keycloak.logout({
@@ -34,22 +31,21 @@ function App() {
     });
   };
 
-  return (
-    <div className="App">
-      <h1>Enterprise SSO Banking Portal</h1>
+  if (!authenticated) {
+    return <p>Redirecting to Login...</p>;
+  }
 
-      {!authenticated ? (
-        <div>
-          <p>You are not logged in.</p>
-          <button onClick={login}>Login with Keycloak</button>
-        </div>
-      ) : (
-        <div>
-          <h2>Welcome {userName}</h2>
-          <p>Login Successful.</p>
-          <button onClick={logout}>Logout</button>
-        </div>
-      )}
+  return (
+    <div className="app-container">
+      <Header userName={userName} />
+
+      <div className="content-container">
+        <Sidebar logout={logout} />
+
+        <main className="dashboard">
+          <AppRoutes />
+        </main>
+      </div>
     </div>
   );
 }
