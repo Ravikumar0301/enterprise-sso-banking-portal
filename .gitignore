@@ -1,0 +1,87 @@
+
+# =========================
+# Git
+# =========================
+*.orig
+*.rej
+
+# =========================
+# Java / Maven / Gradle
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# Maven
+**/target/
+.mvn/timing.properties
+
+# Gradle
+**/build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Java IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+.vscode/
+
+# =========================
+# Node.js / React
+# =========================
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+.npm/
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/versions/
+
+# Frontend build output
+**/dist/
+**/build/
+**/.vite/
+coverage/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# =========================
+# Operating systems
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# TLS certificates and private keys
+# =========================
+/certs/*.key
+/certs/*.pem
+/certs/*.csr
+/certs/*.srl
+
+# Local certificate authorities and generated certificates
+/certs/*-ca.key
+/certs/*-server.key
+
+# =========================
+# Logs and temporary files
+# =========================
+*.log
+tmp/
+temp/
