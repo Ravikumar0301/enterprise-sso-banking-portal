@@ -1,7 +1,8 @@
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/BankingApiApplication.java
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/config/CorsConfig.java
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/config/SecurityConfig.java
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/controller/CaseController.java
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/dto/CaseResponse.java
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/dto/CustomerResponse.java
-/home/ravikumar-r/dev/github/workspace/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/service/CaseService.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/BankingApiApplication.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/config/CorsConfig.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/config/SecurityConfig.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/controller/CaseController.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/controller/ProfileController.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/dto/CaseResponse.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/dto/ProfileResponse.java
+/home/ravi/dev/workspace/learning/enterprise-sso-banking-portal/springboot-api/src/main/java/com/ravi/banking/service/CaseService.java

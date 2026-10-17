@@ -1,8 +1,9 @@
-com/ravi/banking/dto/CustomerResponse.class
+com/ravi/banking/dto/ProfileResponse.class
+com/ravi/banking/controller/ProfileController.class
 com/ravi/banking/service/CaseService.class
 com/ravi/banking/dto/CaseResponse.class
 com/ravi/banking/controller/CaseController.class
 com/ravi/banking/config/CorsConfig.class
 com/ravi/banking/BankingApiApplication.class
-com/ravi/banking/config/SecurityConfig.class
 com/ravi/banking/config/CorsConfig$1.class
+com/ravi/banking/config/SecurityConfig.class
